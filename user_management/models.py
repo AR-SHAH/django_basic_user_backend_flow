@@ -11,4 +11,4 @@ class User(AbstractUser):
     email = models.EmailField(unique=True, blank=False, null=False)
     username = models.CharField(max_length=50, null=False, blank=False, unique=True)
     date_of_birth = models.DateField(null=True, blank=True)
-    profile_picture = models.ImageField(upload_to='profile_pictures/')
+    profile_picture = models.ImageField(upload_to='profile_pictures/', null=True, blank=True)

@@ -4,7 +4,6 @@ from django.contrib.auth.hashers import make_password
 
 
 class UserSerializer(serializers.ModelSerializer):
-
     first_name = serializers.CharField(required=False)
     last_name = serializers.CharField(required=False)
     date_of_birth = serializers.DateField(required=False)
