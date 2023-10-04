@@ -40,6 +40,7 @@ INSTALLED_APPS = [
 
     # Third-party apps
     'rest_framework',
+    'drf_yasg',
 
     # Project apps
     'user_management'
